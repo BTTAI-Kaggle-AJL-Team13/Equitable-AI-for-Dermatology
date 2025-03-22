@@ -26,5 +26,3 @@ The Fitzpatrick Scale graph visualizes the different skin types present in the d
 - Aimee Hong (aimeehong1), Boston College
 - Varsha Athreya (varsha487), Boston University
 - Anissa Patel (anissakp), Boston University
-- Sally Lee (delee5695), Olin College
-- Sneha Sriram (snehasriram1013), Wellesley College

@@ -17,7 +17,7 @@ Our team performed various steps to ensure the data was clean, uniformly sized, 
 - One-hot encoded categorical variables
 
 ## Visualizations
-![Fitzpatrick Scale](https://github.com/user-attachments/assets/2272bd20-0025-40d7-acd2-68f2375c79d6)
+<img src="https://github.com/user-attachments/assets/2272bd20-0025-40d7-acd2-68f2375c79d6" alt="Fitzpatrick Scale" width="300" height="200">
 
 
 ## Team Members

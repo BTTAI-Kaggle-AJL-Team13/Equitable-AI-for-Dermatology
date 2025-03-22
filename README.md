@@ -1,9 +1,9 @@
 # Equitable AI for Dermatology
 
 ## Project Overview
-AI is transforming healthcare, yet dermatology AI tools often underperform for people with darker skin tones due to a lack of diverse training data. This can lead to diagnostic errors, delayed treatments, and health disparities for underserved communities.
+The Kaggle competition, in partnership with the Break Through Tech AI Program and the Algorithmic Justice League, addresses bias in dermatology AI tools, which often underperform for individuals with darker skin tones due to a lack of diverse training data. Participants are tasked with developing inclusive machine learning models to ensure equitable and accurate dermatological diagnoses.
 
-This challenge from Break Through Tech and the Algorithmic Justice League invites students to help address this issue by building an inclusive machine learning model for dermatology.
+This challenge has significant real-world impact. Misdiagnoses and delayed treatments disproportionately affect underserved communities, worsening health disparities. By creating fairer AI models, participants can contribute to improving healthcare outcomes and promoting algorithmic justice in medical technology.
 
 ## Data Exploration
 

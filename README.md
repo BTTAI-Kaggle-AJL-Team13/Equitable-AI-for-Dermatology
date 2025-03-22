@@ -19,7 +19,7 @@ Our team performed various steps to ensure the data was clean, uniformly sized, 
 ## Visualizations
 The Fitzpatrick Scale graph visualizes the different skin types present in the dataset, which is important because it helps assess the diversity of skin tones represented.
 
-<img src="https://github.com/user-attachments/assets/2272bd20-0025-40d7-acd2-68f2375c79d6" alt="Fitzpatrick Scale" width="300" height="200">
+<img src="https://github.com/user-attachments/assets/2272bd20-0025-40d7-acd2-68f2375c79d6" alt="Fitzpatrick Scale" width="275" height="200">
 
 ## Team Members
 - Ashley Bao (ashleybao)

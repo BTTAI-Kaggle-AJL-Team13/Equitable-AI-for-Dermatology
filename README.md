@@ -5,8 +5,18 @@ The Kaggle competition, in partnership with the Break Through Tech AI Program an
 
 This challenge has significant real-world impact. Misdiagnoses and delayed treatments disproportionately affect underserved communities, worsening health disparities. By creating fairer AI models, participants can contribute to improving healthcare outcomes and promoting algorithmic justice in medical technology.
 
-## Data Exploration
+## Dataset
 The dataset is a subset of the FitzPatrick17k dataset, a labeled collection of about 17,000 images depicting a variety of serious (e.g., melanoma) and cosmetic (e.g., acne) dermatological conditions with a range of skin tones scored on the FitzPatrick skin tone scale (FST). About 4500 images are in this set, representing 21 skin conditions out of the 100+ in the full FitzPatrick set. We used a subset in order to create a more manageable and hopefully satisfying classification problem, while trying to maintain some of the representation issues surfaced by the full set.
+
+## Data Preprocessing
+Our team performed various steps to ensure the data was clean, uniformly sized, and ready for model input.
+- Imported essential libraries, including Keras, PIL, NumPy, and scikit-learn
+- Extracted image dimensions and RGB pixel values from JPEG files in the training directory
+- Resized images to 128x128 pixels and normalized pixel values to the range [0,1] to standardize input for the model
+- Filtered out samples labeled as "Wrongly Labelled"
+- One-hot encoded categorical variables
+
+## Visualizations
 
 ## Team Members
 - Ashley Bao (ashleybao)

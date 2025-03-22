@@ -12,7 +12,7 @@ The dataset is a subset of the FitzPatrick17k dataset, a labeled collection of a
 Our team performed various steps to ensure the data was clean, uniformly sized, and ready for model input.
 - Imported essential libraries, including Keras, PIL, NumPy, and scikit-learn
 - Extracted image dimensions and RGB pixel values from JPEG files in the training directory
-- Resized images to 128x128 pixels and normalized pixel values to the range [0,1] to standardize input for the model
+- Resized images to a consistent size and normalized pixel values to the range [0,1] to standardize input for the model
 - Filtered out samples labeled as "Wrongly Labelled"
 - One-hot encoded categorical variables
 
@@ -22,9 +22,9 @@ The Fitzpatrick Scale graph visualizes the different skin types present in the d
 <img src="https://github.com/user-attachments/assets/2272bd20-0025-40d7-acd2-68f2375c79d6" alt="Fitzpatrick Scale" width="275" height="200">
 
 ## Team Members
-- Ashley Bao (ashleybao)
-- Aimee Hong (aimeehong1)
-- Varsha Athreya (varsha487)
-- Anissa Patel (anissakp)
-- Sally Lee (delee5695)
-- Sneha Sriram (snehasriram1013)
+- Ashley Bao (ashleybao), Amherst College
+- Aimee Hong (aimeehong1), Boston College
+- Varsha Athreya (varsha487), Boston University
+- Anissa Patel (anissakp), Boston University
+- Sally Lee (delee5695), Olin College
+- Sneha Sriram (snehasriram1013), Wellesley College

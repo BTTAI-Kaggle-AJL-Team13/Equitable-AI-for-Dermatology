@@ -5,9 +5,9 @@
 ## Data Exploration
 
 ## Team Members
-Ashley Bao
-Aimee Hong
-Varsha Athreya
-Anissa Patel
-Sally Lee
-Sneha Sriram
+- Ashley Bao
+- Aimee Hong
+- Varsha Athreya
+- Anissa Patel
+- Sally Lee
+- Sneha Sriram

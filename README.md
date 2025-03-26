@@ -45,7 +45,7 @@ md5hash (string) is the unique identifier
   * 5: Potentially - not clearly diagnostic, but not necessarily mislabeled, further testing would be required
 * ddi_scale (int) A column used to reconcile this dataset with another dataset (may not be relevant)
 
-Missing values: this dataset included only one variable with missing values, qc, which is an important indicator for understanding whether the image is adequately diagnostic of the skin condition. Of our 2860 observations, we had values for qc in only 90 observations, and 30 observations in the test dataset. Of those 90 observations, 4 were wrongly labelled with images that clearly did not pertain to the labelled skin condition. These observations were removed from our model training, but it is unclear how many of the 2770 observations with missing qc values were also wrongly labelled. 
+Missing values: this dataset included only one variable with missing values, qc, which is an important indicator for understanding whether the image is adequately diagnostic of the skin condition. Of our 2860 observations, we had values for qc in only 90 observations, and 30 observations in the test dataset. Of those 90 observations, 4 were wrongly labelled with images that clearly did not pertain to the labelled skin condition. These observations were removed from our model training, but it is unclear how many of the 2770 observations with missing qc values were also wrongly labelled. Furthermore, the test dataset excluded the nine_partition_label and three_partition_label, which are often unavailable until some sort of medical examination.
 
 ### Data Preprocessing
 Our team performed various steps to ensure the data was clean, uniformly sized, and ready for model input.
@@ -56,9 +56,11 @@ Our team performed various steps to ensure the data was clean, uniformly sized, 
 - One-hot encoded categorical variables
 
 ### Visualizations
-The Fitzpatrick Scale graph visualizes the different skin types present in the dataset, which is important because it helps assess the diversity of skin tones represented.
+Distribution of skin types: The Fitzpatrick Scale graph shows the distribution of skin types present in the dataset using Fitzpatrick Skin Types, which range from 1 for the lightest skin tones to 7 for the darkest skin tones. This allows us to assess the diversity of skin tones represented, which is skewed toward lighter skin tones. People with an FST of 4 or larger are a significant minority in the population, with 698 of the 2860 observations, or just less than 25% of the population. Since darker skin tones are such a small percentage of the dataset, our model will have less training data and will likely perform worse in future cases for people with dark skin tones. 
 
 <img src="https://github.com/user-attachments/assets/2272bd20-0025-40d7-acd2-68f2375c79d6" alt="Fitzpatrick Scale" width="275" height="200">
+
+Distribution of skin conditions: Of the 21 skin conditions represented in our dataset, squamous cell carcinoma and basal cell carcinoma are the most common, comprising about 25.7% of the data. Acne, the most common type of skin condition, is only the 7th most represented skin condition in the data, making up about 4.5% of the observations. For many of the less common skin conditions in the dataset, there are only about 50 observations, or less than 2% of the dataset, for the model to learn from. 
 
 ![image](https://github.com/user-attachments/assets/0f71b96f-cc20-4b61-a744-c301f2e47959)
 

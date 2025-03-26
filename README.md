@@ -70,6 +70,11 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 * [ADD] Model(s) used (e.g., CNN with transfer learning, regression models)
 * [ADD] Feature selection and Hyperparameter tuning strategies
 * [ADD] Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+* Applied an 80% train and 20% test split.
+* Trained a baseline CNN on pictures and classifications in the training set. Achieved an F1-score of ~0.2 in Kaggle.
+* Fine-tuned a pre-trained CNN model (Resnet and MobileNet) by implementing transfer learning. Augmented data from underrepresented skin conditions and increased the number of layers in the model.
+* Achieved an accuracy of ~70% during training on the validation data and an improved F1-score of ~0.59 in Kaggle. 
+
 
 ## **📈 Results & Key Findings**
 
@@ -83,10 +88,10 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 * Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ## **👥 Team Members**
-| Ashley Bao | @ashleybao | Co-led team,  |
+| Ashley Bao | @ashleybao | Co-led team, preprocessed data, built baseline CNN model |
 
-| Aimee Hong | @aimeehong1 | Co-led team,  |
+| Aimee Hong | @aimeehong1 | Co-led team, conducted exploratory data analysis, one hot encoded categorical variables, and built a baseline CNN model |
 
-| Varsha Athreya | @varsha487 | contribution |
+| Varsha Athreya | @varsha487 | Preprocessed data, fine-tuned pre-trained CNN model using transfer learning, calculated evaluation metrics |
 
 | Anissa Patel | @anissakp | Researched pre-processing and model selection, built baseline CNN model |

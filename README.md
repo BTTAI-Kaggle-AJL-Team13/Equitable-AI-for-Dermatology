@@ -77,8 +77,36 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 ## **📈 Results & Key Findings**
 
 * Placed 19/74 on Kaggle Competition Leaderboard
-* The following image shows our accuracy and loss across the epochs when training. The model achieved around 90% accuracy on the validation dataset after 15 epochs of training. Also note that even once 100% accuracy was reached on the training dataset, around epoch 4, the validation accuracy continued to increase until around epoch 10.
-* 
+* The following graph shows our accuracy and loss across the epochs when training. The model achieved around 90% accuracy on the validation dataset after 15 epochs of training. Also note that even once 100% accuracy was reached on the training dataset, around epoch 4, the validation accuracy continued to increase until around epoch 10.
+![curve_loss](https://github.com/user-attachments/assets/b6016d22-bccd-4713-bb21-1ac0d2790b84)
+* Below is the confusion matrix for the predictions made in our validation dataset.
+![confusion](https://github.com/user-attachments/assets/47240209-53ae-4865-8450-7c9953866e39)
+* The following graph is the precision-recall curve for our dataset. 
+![prec_recall](https://github.com/user-attachments/assets/a5e7539f-3a66-47c9-b109-63e569e8ae96)
+* The following figure shows the performance of the model on the entire provided training dataset, including the data we trained on and validated on. Our training dataset accuracy reached 100%, so we can assume that the differences in accuracy that this plot displays reflect the differences in validation accuracy. We can see that at either end of the fitzpatrick scale, the accuracy does decrease.
+![acc_comparison](https://github.com/user-attachments/assets/26aebdc8-b685-46ce-aaf3-79277d4bf2c5)
+* Note: In the above figures, the class number to skin condition conversion used is:
+  * Class 0: Prurigo Nodularis
+  * Class 1: Basal Cell Carcinoma Morpheiform
+  * Class 2: Keloid
+  * Class 3: Basal Cell Carcinoma
+  * Class 4: Seborrheic Keratosis
+  * Class 5: Eczema
+  * Class 6: Folliculitis
+  * Class 7: Squamous Cell Carcinoma
+  * Class 8: Actinic Keratosis
+  * Class 9: Mycosis Fungoides
+  * Class 10: Acne Vulgaris
+  * Class 11: Dyshidrotic Eczema
+  * Class 12: Melanoma
+  * Class 13: Epidermal Nevus
+  * Class 14: Malignant Melanoma
+  * Class 15: Pyogenic Granuloma
+  * Class 16: Dermatofibroma
+  * Class 17: Kaposi Sarcoma
+  * Class 18: Acne
+  * Class 19: Dermatomyositis
+  * Class 20: Superficial Spreading Melanoma SSM
 
 ## **👥 Team Members**
 | Ashley Bao | @ashleybao | Co-led team, preprocessed data, built baseline CNN model |

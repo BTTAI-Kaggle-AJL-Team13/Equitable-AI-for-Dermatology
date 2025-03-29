@@ -3,7 +3,7 @@
 ## **🎯 Project Highlights**
 
 * Developed a convolutional neural network (CNN) model and utilized MobileNet for transfer learning to improve the classification of skin conditions.
-* Used data augmentation on underrepresented samples and selective unfreezing on MobileNet layers to improve accuracy
+* Used data augmentation and selective unfreezing on MobileNet layers to improve accuracy
 * Achieved an F1-score of approximately 0.59 and ranked 19th out of 74 participating teams on the final Kaggle Leaderboard.
 
 
@@ -67,25 +67,18 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 
 ## **🧠 Model Development**
 
-* [ADD] Model(s) used (e.g., CNN with transfer learning, regression models)
-* [ADD] Feature selection and Hyperparameter tuning strategies
-* [ADD] Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
 * Applied an 80% train and 20% test split.
 * Trained a baseline CNN on pictures and classifications in the training set. Achieved an F1-score of ~0.2 in Kaggle.
-* Fine-tuned a pre-trained CNN model (Resnet and MobileNet) by implementing transfer learning. Augmented data from underrepresented skin conditions and increased the number of layers in the model.
-* Achieved an accuracy of ~70% during training on the validation data and an improved F1-score of ~0.59 in Kaggle. 
+* Fine-tuned a pre-trained CNN model (Resnet and MobileNet) by implementing transfer learning.
+* Augmented data from underrepresented skin conditions and increased the number of outer layers in the model.
+* Achieved an accuracy of ~90% during training on the validation data and an improved F1-score of ~0.59 in Kaggle. 
 
 
 ## **📈 Results & Key Findings**
 
 * Placed 19/74 on Kaggle Competition Leaderboard
-* [ADD] How your model performed overall
-* [ADD] How your model performed across different skin tones (AJL)
-* [ADD] Insights from evaluating model fairness (AJL)
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+* The following image shows our accuracy and loss across the epochs when training. The model achieved around 90% accuracy on the validation dataset after 15 epochs of training. Also note that even once 100% accuracy was reached on the training dataset, around epoch 4, the validation accuracy continued to increase until around epoch 10.
+* 
 
 ## **👥 Team Members**
 | Ashley Bao | @ashleybao | Co-led team, preprocessed data, built baseline CNN model |

@@ -6,6 +6,7 @@
 * Used data augmentation and selective unfreezing on MobileNet layers to improve accuracy
 * Achieved an F1-score of approximately 0.59 and ranked 19th out of 74 participating teams on the final Kaggle Leaderboard.
 
+---
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 
@@ -14,6 +15,57 @@
 The Kaggle competition, in partnership with the Break Through Tech AI Program and the Algorithmic Justice League, addresses bias in dermatology AI tools that often underperform for individuals with darker skin tones due to a lack of diverse and comprehensive training data. Participants are tasked with developing inclusive machine learning models to ensure equitable and accurate dermatological diagnosis using limited medical data and image classification.
 
 This challenge has a significant real-world impact since underperforming AI dermatology tools can lead to diagnostic errors and delayed treatments that disproportionately affect underserved communities and worsen health disparities. By creating more equitable AI models, participants can contribute to improving healthcare outcomes and promoting algorithmic justice in medical technology.
+
+---
+
+## **👩🏽‍💻 Setup & Execution**
+
+**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+
+* To clone the repository, click the green "<> Code" button in the top right corner. 
+* You will need to install the following packages for the code to run. You can use the command ```pip install <package-name>```.
+```bash
+# Data manipulation and processing
+pip install pandas
+pip install numpy
+
+# Visualization
+pip install matplotlib
+pip install seaborn
+
+# Keras and TensorFlow for deep learning
+pip install keras
+pip install tensorflow
+
+# Image handling
+pip install pillow
+
+# Sklearn for metrics and preprocessing
+pip install scikit-learn
+
+# Utilities
+pip install tqdm  # For progress bars
+
+# MobileNet and other Keras/TensorFlow components
+pip install tensorflow  # To include MobileNet and other Keras features
+```
+ 1. **pandas**: For data manipulation.
+ 2. **numpy**: For numerical operations.
+ 3. **os**: For interacting with the operating system (part of Python's standard library).
+ 4. **matplotlib**: For creating plots and visualizations.
+ 5. **seaborn**: For statistical data visualization.
+ 6. **keras**: For building neural network models (used with TensorFlow).
+ 7. **tensorflow**: For deep learning, which includes Keras as part of its API.
+ 8. **Pillow**: For image processing.
+ 9. **scikit-learn**: For machine learning, metrics, and preprocessing.
+ 10. **tqdm**: For progress bars in loops.
+ 11. **glob**: For finding pathnames matching a specified pattern (part of Python's standard library).
+ 12. **MobileNet**: Part of TensorFlow's Keras applications.
+ 13. **OneHotEncoder**: From `sklearn.preprocessing`, used for one-hot encoding.
+ 14. **LabelEncoder**: From `sklearn.preprocessing`, used for encoding labels.
+* To run the scripts, use Google Colab or Jupyter Lab, or any other IDE for editing python notebooks
+* To access the dataset, use the Kaggle competition website, linked at the top of this file.
+---
 
 ## **📊 Data Exploration**
 
@@ -64,6 +116,7 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 
 ![image](https://github.com/user-attachments/assets/0f71b96f-cc20-4b61-a744-c301f2e47959)
 
+---
 
 ## **🧠 Model Development**
 
@@ -73,6 +126,7 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 * Augmented data from underrepresented skin conditions and increased the number of outer layers in the model.
 * Achieved an accuracy of ~90% during training on the validation data and an improved F1-score of ~0.59 in Kaggle. 
 
+---
 
 ## **📈 Results & Key Findings**
 
@@ -107,6 +161,30 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
   * Class 18: Acne
   * Class 19: Dermatomyositis
   * Class 20: Superficial Spreading Melanoma SSM
+    
+---
+
+## **🖼️ Impact Narrative**
+1. To address model fairness, we leveraged data augmentation techniques to account for training dataset imbalances. This creates a larger dataset with random permutations of flipped, rotated, cropped, and stretched images. We also used a validation set to assess model performance across different skin tones. Lastly, we employed data visualization techniques to better understand the accuracy of our predictions across different skin tones. This allowed us to keep track of if our model has any inherent biases due to gaps in the data.
+2. This work could have an impact in the healthcare industry. AI in general could make access to healthcare and diagnoses more available at lower costs, increasing equity in the healthcare industry. While official diagnoses should be made with a professional, machine learning algorithms such as the one we developed can allow patients a way of understanding their condition without having to go through the process of consulting with a medical professional.
+
+---
+
+## **🚀 Next Steps & Future Improvements**
+
+**Address the following:**
+
+* While we did address the class imbalances using oversampling, our model still performs worse on the ends of the Fitzpatrick scale. We could work to improve this by having more representative datasets, so our model would be able to have more data to train on.
+* With more time and resources, we would fine tune more layers of the MobileNet model and test other transfer learning models. We chose to implement MobileNet because previous research showed that MobileNet performed well for skin condition recognition compared to other models [1]. We would also train on more data to increase the accuracy of our model.
+* In addition to using transfer learning - which is the method that resulted in the highest F1 score - we also implemented a CNN from scratch. While we were able to train the model successfully, it took a longer time and did not generalize well. This could be something to further research though.
+
+---
+
+## **📄 References & Additional Resources**
+
+1. Velasco, J. S., Catipon, J. V., Monilar, E. G., Amon, V. M., Virrey, G. C., & Tolentino, L. K. S. (2023). Classification of skin disease using transfer learning in convolutional neural networks. *International Journal of Emerging Technology and Advanced Engineering, 13*(4), 1–7. https://doi.org/10.46338/ijetae0423_01
+
+---
 
 ## **👥 Team Members**
 | Ashley Bao | @ashleybao | Co-led team, preprocessed data, built baseline CNN model |

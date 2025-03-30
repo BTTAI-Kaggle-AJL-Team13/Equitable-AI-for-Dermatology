@@ -20,8 +20,6 @@ This challenge has a significant real-world impact since underperforming AI derm
 
 ## **👩🏽‍💻 Setup & Execution**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
-
 * To clone the repository, click the green "<> Code" button in the top right corner. 
 * You will need to install the following packages for the code to run. You can use the command ```pip install <package-name>```.
 ```bash
@@ -172,9 +170,7 @@ Distribution of skin conditions: Of the 21 skin conditions represented in our da
 
 ## **🚀 Next Steps & Future Improvements**
 
-**Address the following:**
-
-* While we did address the class imbalances using oversampling, our model still performs worse on the ends of the Fitzpatrick scale. We could work to improve this by having more representative datasets, so our model would be able to have more data to train on.
+* While we did address the class imbalances using oversampling, our model still performs worse on the both ends of the Fitzpatrick scale. We could work to improve this by having more representative datasets, so our model would be able to have more data to train on.
 * With more time and resources, we would fine tune more layers of the MobileNet model and test other transfer learning models. We chose to implement MobileNet because previous research showed that MobileNet performed well for skin condition recognition compared to other models [1]. We would also train on more data to increase the accuracy of our model.
 * In addition to using transfer learning - which is the method that resulted in the highest F1 score - we also implemented a CNN from scratch. While we were able to train the model successfully, it took a longer time and did not generalize well. This could be something to further research though.
 

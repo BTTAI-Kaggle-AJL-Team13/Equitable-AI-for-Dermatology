@@ -61,8 +61,9 @@ pip install tensorflow  # To include MobileNet and other Keras features
  12. **MobileNet**: Part of TensorFlow's Keras applications.
  13. **OneHotEncoder**: From `sklearn.preprocessing`, used for one-hot encoding.
  14. **LabelEncoder**: From `sklearn.preprocessing`, used for encoding labels.
-* To run the scripts, use Google Colab or Jupyter Lab, or any other IDE for editing python notebooks
+* To run the scripts, use Google Colab or Jupyter Lab, or any other IDE for editing python notebooks.
 * To access the dataset, use the Kaggle competition website, linked at the top of this file.
+* Make sure to change any file names and directory paths in the python notebook to the respective development environment you opt to use.
 ---
 
 ## **📊 Data Exploration**
